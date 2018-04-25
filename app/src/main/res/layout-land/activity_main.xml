@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/turquoise"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="@string/motto"
+            android:textColor="@color/motto_color"
+            android:textSize="@dimen/motto_size"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif-monospace"
+            android:paddingTop="@dimen/company_name_padding_top"
+            android:text="@string/udacity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/company_name_size"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/contact"
+            android:text="@string/address1" />
+
+        <TextView
+            style="@style/contact"
+            android:text="@string/address2" />
+
+        <TextView
+            style="@style/contact"
+            android:paddingBottom="@dimen/phone_padding_bottom"
+            android:text="@string/phone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo" />
+    </LinearLayout>
+</ScrollView>
+
+
